@@ -23,7 +23,6 @@ The goals / steps of this project are the following:
 [image2]: ./images/label_count.png "Label Count"
 [image3]: ./images/sorted_label_count.png "Sorted Label Count"
 [image4]: ./images/sample_rotation.png "Sample Rotation"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
@@ -85,7 +84,12 @@ For example, image rotation
 
 ![Sample image rotation in 90 degree][image4]
 
-As a last step, I normalized the image data because ...
+
+###### Normalization
+
+1. Improve numerical stability
+
+2. Pose problem in a well conditioned way which makes optimizer (e.g. SGD) to processed easilly
 
 ####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 
