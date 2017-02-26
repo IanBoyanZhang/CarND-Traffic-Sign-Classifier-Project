@@ -23,10 +23,11 @@ The goals / steps of this project are the following:
 [image2]: ./images/label_count.png "Label Count"
 [image3]: ./images/sorted_label_count.png "Sorted Label Count"
 [image4]: ./images/sample_rotation.png "Sample Rotation"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image5]: ./pack/50.jpg "50 Km"
+[image6]  ./pack/curve.jpg "Left curve"
+[image7]  ./pack/keep_right.jpg "Keep right"
+[image8]  ./pack/stop.jpg "Stop sign"
+[image9]  ./pack/yield.jpg "Yield"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -200,8 +201,9 @@ Not ideal, as good as described in paper
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
+![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
+![alt text][image9]
 
 The first image might be difficult to classify because ...
 
