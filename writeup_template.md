@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image1]: ./images/dataset_sample.png "Dataset Sample"
 [image2]: ./images/label_count.png "Label Count"
 [image3]: ./images/sorted_label_count.png "Sorted Label Count"
-[image3]: ./examples/random_noise.jpg "Random Noise"
+[image4]: ./images/sample_rotation.png "Sample Rotation"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
@@ -65,13 +65,17 @@ Below is bar chart showing number of samples for each label
 ![alt text][image2]
 
 Number of samples for each label in ascending order
+
 ![alt text][image3]
 
 ###Design and Test a Model Architecture
 
 ####1. Describe how, and identify where in your code, you preprocessed the image data. What tecniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
 
-The code for this step is contained in the fourth code cell of the IPython notebook.
+
+
+The code for this step is contained in the code cell[17] of the IPython notebook.
+
 
 As a first step, I decided to convert the images to grayscale because ...
 
