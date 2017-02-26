@@ -84,6 +84,9 @@ For example, image rotation
 
 ![Sample image rotation in 90 degree][image4]
 
+The code for splitting the data into training and validation sets is in the cell[37]. We use original provided data set segements.
+
+In the future, given enough time and resource, we will look into how different size and segementation of training and validation sets
 
 ###### Normalization
 
@@ -92,6 +95,51 @@ For example, image rotation
 2. Pose problem in a well conditioned way which makes optimizer (e.g. SGD or auto tuned Adam optimizer) to processed easilly
 
 ####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
+To cross validate model, there is a validation set provided which has 4410 data points
+
+Here is an example of an original image and an augmented image:
+
+![Sample image rotation in 90 degree][image4]
+
+The difference between the original data set and the augmented data set is the following ... 
+
+####3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+
+LeNet-5 model architecture could be found in the code cell [22]
+
+Both grayscaled and 3 channels (RGB) models was put under tests
+
+My final model consisted of the following layers:
+
+When using RGB channel = 3
+When using grayscale channel = 1
+
+| Layer         		|     Description	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Input         		| 32x32xCHANNEL RGB image   							| 
+| Convolution 3x3     	| 1x1 stride, valid padding, outputs 5x5xCHANNELx6 	|
+| RELU					|												|
+| Dropout				| rate = 0.5            |
+| Max pooling	      	| 2x2 stride,  outputs 14x14x16 				|
+| Convolution 3x3	    | 1x1 stride, valid padding, output 5x5x6x16|
+| RELU					|												|
+| Dropout				| rate = 0.5            |
+| Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
+| Flatten		    |                       |
+| Dropout				| rate = 0.5            |
+| Fully connected		| outputs 120        									|
+| RELU					|												|
+| Dropout				| rate = 0.5            |
+| Fully connected		| outputs 84        									|
+| RELU					|												|
+| Dropout				| rate = 0.5            |
+| Fully connected		| outputs 43        									|
+| Softmax				|        									|
+ 
+
+
+####4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+
 
 ##### Architecture
 
@@ -105,7 +153,7 @@ With predefined: Hyperparameters
 EPOCH = 10
 BATCH_SIZE = 128
 
-The code for splitting the data into training and validation sets is contained in the code cell[25, 26, 27] of the IPython notebook.  
+Model training and evaluation is contained in the code cell[25, 26, 27] of the IPython notebook.  
 
 One hot encoding was used for classifier.
 
@@ -115,41 +163,7 @@ AdamOptimizer with start learning rate 0.001
 ###### Cost function
 Cross Entropy loss with softmax (probablity activation layer)
 
-To cross validate model, there is a validation set provided which has 4410 data points
 
-Here is an example of an original image and an augmented image:
-
-![Sample image rotation in 90 degree][image4]
-
-The difference between the original data set and the augmented data set is the following ... 
-
-####3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
-
-LeNet-5 model architecture could be found in the code cell [22]
-
-The code for my final model is located in the seventh cell of the ipython notebook. 
-
-My final model consisted of the following layers:
-
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
-
-
-####4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
-
-The code for training the model is located in the eigth cell of the ipython notebook. 
-
-To train the model, I used an ....
 
 ####5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
