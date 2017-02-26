@@ -89,26 +89,43 @@ For example, image rotation
 
 1. Improve numerical stability
 
-2. Pose problem in a well conditioned way which makes optimizer (e.g. SGD) to processed easilly
+2. Pose problem in a well conditioned way which makes optimizer (e.g. SGD or auto tuned Adam optimizer) to processed easilly
 
 ####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 
-The code for splitting the data into training and validation sets is contained in the fifth code cell of the IPython notebook.  
+##### Architecture
 
-To cross validate my model, I randomly split the training data into a training set and validation set. I did this by ...
+LeNet-5 model architecture is decipted in the code cell [22]
 
-My final training set had X number of images. My validation set and test set had Y and Z number of images.
+Dropout layer is adopted to avoid potential overfitting
 
-The sixth code cell of the IPython notebook contains the code for augmenting the data set. I decided to generate additional data because ... To add more data to the the data set, I used the following techniques because ... 
+Keep probability is 0.5
+
+With predefined: Hyperparameters
+EPOCH = 10
+BATCH_SIZE = 128
+
+The code for splitting the data into training and validation sets is contained in the code cell[25, 26, 27] of the IPython notebook.  
+
+One hot encoding was used for classifier.
+
+###### Optimizer
+AdamOptimizer with start learning rate 0.001
+
+###### Cost function
+Cross Entropy loss with softmax (probablity activation layer)
+
+To cross validate model, there is a validation set provided which has 4410 data points
 
 Here is an example of an original image and an augmented image:
 
-![alt text][image3]
+![Sample image rotation in 90 degree][image4]
 
 The difference between the original data set and the augmented data set is the following ... 
 
-
 ####3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+
+LeNet-5 model architecture could be found in the code cell [22]
 
 The code for my final model is located in the seventh cell of the ipython notebook. 
 
