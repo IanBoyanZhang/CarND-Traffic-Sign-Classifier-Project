@@ -41,6 +41,8 @@ You're reading it! and here is a link to my [project code](https://github.com/Ia
 
 ###Data Set Summary & Exploration
 
+[German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb) is a multi-class, single-image dataset consists of 39,209 32×32 px color images  f
+
 ####1. Provide a basic summary of the data set and identify where in your code the summary was done. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 The code for this step is contained in the code cell[30] of the IPython notebook.  
@@ -55,7 +57,7 @@ signs data set:
 
 ####2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
 
-The code for this step is contained in the third code [31] [60] [58] of the IPython notebook.  
+The code for this step is contained in the third code [31] [60] [58] of the IPython notebook.
 
 
 ![alt text][image1]
@@ -72,16 +74,16 @@ Number of samples for each label in ascending order
 
 ####1. Describe how, and identify where in your code, you preprocessed the image data. What tecniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
 
-
+I decided to convert the images to grayscale,
+according to [Sermanet et al.](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf), grayscaling training images will improve model performance. We will come back to this point later.
 
 The code for this step is contained in the code cell[17] of the IPython notebook.
 
+Before grayscaling, other image/data translation were used for augmenting data.
 
-As a first step, I decided to convert the images to grayscale because ...
+For example, image rotation
 
-Here is an example of a traffic sign image before and after grayscaling.
-
-![alt text][image2]
+![Sample image rotation in 90 degree][image4]
 
 As a last step, I normalized the image data because ...
 
