@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./images/dataset_sample.png "Dataset Sample"
-[image2]: ./images/label_count.jpg "Label Count"
+[image2]: ./images/label_count.png "Label Count"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
@@ -56,9 +56,11 @@ signs data set:
 
 The code for this step is contained in the third code [31] [60] [58] of the IPython notebook.  
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 
 ![alt text][image1]
+
+Below is bar chart showing number of samples for each label
+![alt text][image2]
 
 ###Design and Test a Model Architecture
 
