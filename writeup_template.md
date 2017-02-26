@@ -112,6 +112,7 @@ Both grayscaled and 3 channels (RGB) models was put under tests
 My final model consisted of the following layers:
 
 When using RGB channel = 3
+
 When using grayscale channel = 1
 
 | Layer         		|     Description	        					| 
@@ -139,7 +140,6 @@ When using grayscale channel = 1
 
 
 ####4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
-
 
 ##### Architecture
 
@@ -169,23 +169,30 @@ Cross Entropy loss with softmax (probablity activation layer)
 
 The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
 
+Calculation test and validation accuracy of the mode is located in the cell[28] of the Ipython notebook
+
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 87.%
+* validation set accuracy of 91.6%
+* test set accuracy of 90.6%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+LeNet 5 without dropout was chosen as intial architecture
 * What were some problems with the initial architecture?
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 * Which parameters were tuned? How were they adjusted and why?
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
+
 If a well known architecture was chosen:
 * What architecture was chosen?
+LeNet 5
 * Why did you believe it would be relevant to the traffic sign application?
+LeNet 5 performs well in text, hand recognization.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+In the original paper [Sermanet et al.](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf), reported training and test accuracy is around 97 to 98 percent, here, trained model accuracy is around 90 percent. 
+Not ideal, as good as described in paper
 
 ###Test a Model on New Images
 
