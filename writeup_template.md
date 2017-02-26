@@ -60,6 +60,7 @@ The code for this step is contained in the third code [31] [60] [58] of the IPyt
 ![alt text][image1]
 
 Below is bar chart showing number of samples for each label
+
 ![alt text][image2]
 
 ###Design and Test a Model Architecture
