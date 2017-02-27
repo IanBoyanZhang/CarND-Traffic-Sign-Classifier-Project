@@ -320,3 +320,16 @@ Outputing final feature map for each channel
 ![alt text][image10]
 
 Trying to figure out how to output feature map for hidden layers
+#### Future improvements
+Currently, we don't do extensive runs to optimize hyperparameters. There are a couple of popular hyperparameter optimization strategies, such as 
+grid search, bayesian optimization, random search and gradient based optimization. Hopefully, in the near future, I would have enough bandwidth to explore these techniques in this or other ML problems.
+
+#### Appendix
+
+To run jupyter solution book on CarND EC2 clusters.
+
+You would need to manually download training set.
+
+Install cv2: pip install opencv-python
+
+Install tensorflow: pip install tensorflow
