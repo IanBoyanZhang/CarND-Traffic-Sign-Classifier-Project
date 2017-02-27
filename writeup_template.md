@@ -197,11 +197,11 @@ Not ideal, as good as described in paper
 
 Here are five German traffic signs that I found on the web:
 
-![curve](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/curve.jpg)
-![50 Km limit](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/curve.jpg)
-![Keep Right](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/keep_right.jpg)
-![Stop_sign](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/stop.jpg)
-![Yield](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/yield.jpg)
+[curve](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/curve.jpg)
+[50 Km limit](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/curve.jpg)
+[Keep Right](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/keep_right.jpg)
+[Stop_sign](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/stop.jpg)
+[Yield](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/yield.jpg)
 
 Model network constantly mistake 30km speed limit sign to 50km speed limit sign. As we can see the speed sign limits all have round shape
 Keep 
