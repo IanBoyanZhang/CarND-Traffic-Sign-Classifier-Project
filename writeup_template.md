@@ -269,7 +269,10 @@ For the first image, the model is really confident (more than 99.8 percent sure)
 |  <.001				    | Other      							|
 
 
-For the second image ... 
+Dangerouse Curve has a relative sufficient training sets. However, as we can see, many training images are dark.
+Potential improvement idea: increase image contrast or brightness. The model also seems confused red trangular board with 
+Speed limit round boarder. Is this the sign of over-fitting/training?
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 0.476958 | General caution|
@@ -278,6 +281,9 @@ For the second image ...
 | 0.0344641| Speed limit (30km/h)|
 | < 0.001  | Speed limit (120km/h)|
 
+
+Keep right and ahead only also share similar features, such sign shape, background and arrows
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 0.55838 | Keep right|
@@ -285,3 +291,25 @@ For the second image ...
 | 0.0802027| Road work|
 | 0.0486142| Turn left ahead |
 |0.0251512 | Turn right ahead|
+
+
+Model nails it.
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0| Stop|
+|2.31413e-13| No entry|
+|2.79405e-15|Speed limit (80km/h)|
+|2.22512e-20|Speed limit (30km/h)|
+|2.47789e-22|No passing for vehicles over 3.5 metric tons|
+
+
+The model is really confident (more than 99.9 percent sure) that this is priority road. Image constrast issue again?
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+|0.999734|priority road|
+|0.000193087 | Dangerous curve to the right|
+|2.31002e-05 | Slippery road|
+|2.29349e-05 | Speed limit (60km/h)|
+| 1.49192e-05 | No passing for vehicles over 3.5 metric tons|
