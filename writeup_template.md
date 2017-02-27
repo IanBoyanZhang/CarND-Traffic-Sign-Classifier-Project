@@ -324,6 +324,8 @@ Trying to figure out how to output feature map for hidden layers
 Currently, we don't do extensive runs to optimize hyperparameters. There are a couple of popular hyperparameter optimization strategies, such as 
 grid search, bayesian optimization, random search and gradient based optimization. Hopefully, in the near future, I would have enough bandwidth to explore these techniques in this or other ML problems.
 
+Model improvements: would love to try modified LeNet architecture as seen in other papers. Such as connect multiple pooling layer together.
+
 #### Appendix
 
 To run jupyter solution book on CarND EC2 clusters.
