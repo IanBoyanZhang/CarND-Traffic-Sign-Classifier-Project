@@ -29,7 +29,6 @@ The goals / steps of this project are the following:
 [image8]: ./images/c4.png "Predication Comparison4"
 [image9]: ./images/c5.png "Predication Comparison5"
 [image10]: ./images/featuremap.png "Feature map"
-[image11]: ./images/featuremap4x4.png "Feature map"
 [image12]: ./images/feature100.png "Feature 100"
 [image13]: ./images/original100.png "original 100"
 
@@ -268,6 +267,8 @@ The code for making predictions on my final model is located in the cell[24, 43]
 
 For the first image, the model is really confident (more than 99.8 percent sure) that this is a 30Km/h speed limit sign
 
+
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .998       			| 30Km/h Speed Limit | 
@@ -329,10 +330,6 @@ Outputing feature map for "conv1" showing first hidden layer output after 2d con
 Input layer with 5x5 filter size
 
 ![alt text][image10]
-
-Input layer with 4x4 filter size
-
-![alt text][image11]
 
 
 Input layer feature output
