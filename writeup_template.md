@@ -94,7 +94,7 @@ In the future, given enough time and resource, we will look into how different s
 
 1. Improve numerical stability
 
-2. Pose problem in a well conditioned way which makes optimizer (e.g. SGD or auto tuned Adam optimizer) to processed easilly
+2. Pose problem in a well conditioned way in order to enable optimizer (e.g. SGD or auto tuned Adam optimizer) to proceeed 
 
 ####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 To cross validate model, there is a validation set provided which has 4410 data points
@@ -109,7 +109,7 @@ The difference between the original data set and the augmented data set is the f
 
 LeNet-5 model architecture could be found in the code cell [22]
 
-Both grayscaled and 3 channels (RGB) models was put under tests
+Both grayscaled and 3 channels (RGB) models was put under tests. Surprisingly, transforming image to grayscale does`t significantly improve overall accuracy
 
 My final model consisted of the following layers:
 
