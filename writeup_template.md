@@ -24,11 +24,11 @@ The goals / steps of this project are the following:
 [image3]: ./images/sorted_label_count.png "Sorted Label Count"
 [image4]: ./images/sample_rotation.png "Sample Rotation"
 [image5]: ./pack/50.jpg "50 Km"
-[image6]  ./pack/curve.jpg "Left curve"
-[image7]  ./pack/keep_right.jpg "Keep right"
-[image8]  ./pack/stop.jpg "Stop sign"
-[image9]  ./pack/yield.jpg "Yield"
-[image10] ./images/comparison.png "Predication Comparison"
+[image6]:  ./pack/curve.jpg "Left curve"
+[image7]: ./pack/keep_right.jpg "Keep right"
+[image8]:  ./pack/stop.jpg "Stop sign"
+[image9]: ./pack/yield.jpg "Yield"
+[image10]: ./images/comparison.png "Predication Comparison"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
