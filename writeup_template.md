@@ -316,6 +316,7 @@ The model is really confident (more than 99.9 percent sure) that this is priorit
 | 1.49192e-05 | No passing for vehicles over 3.5 metric tons|
 
 Outputing final feature map for each channel
+
 ![alt text][image10]
 
 Trying to figure out how to output feature map for hidden layers
