@@ -202,9 +202,9 @@ Not ideal, as good as described in paper
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
-![alt text][image9]
+![alt text][image5 =50x50] ![alt text][image6 =50x50]
+![alt text][image7 =50x50] ![alt text][image8 =50x50]
+![alt text][image9 =50x50]
 
 Model network constantly mistake 30km speed limit sign to 50km speed limit sign. As we can see the speed sign limits all have round shape
 Keep 
