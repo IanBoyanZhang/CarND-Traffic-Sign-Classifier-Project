@@ -28,6 +28,7 @@ The goals / steps of this project are the following:
 [image7]: ./images/c3.png "Predication Comparison3"
 [image8]: ./images/c4.png "Predication Comparison4"
 [image9]: ./images/c5.png "Predication Comparison5"
+[image10]: ./images/feature.png "Feature map"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -313,3 +314,8 @@ The model is really confident (more than 99.9 percent sure) that this is priorit
 |2.31002e-05 | Slippery road|
 |2.29349e-05 | Speed limit (60km/h)|
 | 1.49192e-05 | No passing for vehicles over 3.5 metric tons|
+
+Outputing final feature map for each channel
+![alt text][image10]
+
+Trying to figure out how to output feature map for hidden layers
