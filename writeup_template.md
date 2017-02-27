@@ -28,6 +28,7 @@ The goals / steps of this project are the following:
 [image7]  ./pack/keep_right.jpg "Keep right"
 [image8]  ./pack/stop.jpg "Stop sign"
 [image9]  ./pack/yield.jpg "Yield"
+[image10] ./images/comparison.png "Predication Comparison"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -205,9 +206,13 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image7] ![alt text][image8]
 ![alt text][image9]
 
-The first image might be difficult to classify because ...
+Model network constantly mistake 30km speed limit sign to 50km speed limit sign. As we can see the speed sign limits all have round shape
+Keep 
+
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+
+![alt text][image10]
 
 The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
 
