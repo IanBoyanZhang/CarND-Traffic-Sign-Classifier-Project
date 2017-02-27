@@ -333,3 +333,7 @@ You would need to manually download training set.
 Install cv2: pip install opencv-python
 
 Install tensorflow: pip install tensorflow
+
+Ideally, tensorflow gpu
+
+pip install tensorflow-gpu
