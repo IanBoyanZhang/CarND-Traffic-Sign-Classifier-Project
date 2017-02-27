@@ -30,6 +30,8 @@ The goals / steps of this project are the following:
 [image9]: ./images/c5.png "Predication Comparison5"
 [image10]: ./images/featuremap.png "Feature map"
 [image11]: ./images/featuremap4x4.png "Feature map"
+[image12]: ./images/feature100.png "Feature 100"
+[image13]: ./images/original100.png "original 100"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -320,11 +322,26 @@ The model is really confident (more than 99.9 percent sure) that this is priorit
 |2.29349e-05 | Speed limit (60km/h)|
 | 1.49192e-05 | No passing for vehicles over 3.5 metric tons|
 
+##### Feature maps
+
 Outputing feature map for "conv1" showing first hidden layer output after 2d convolution
 
 Input layer with 5x5 filter size
 
 ![alt text][image10]
+
+Input layer with 4x4 filter size
+
+![alt text][image11]
+
+
+Input layer feature output
+
+![alt text][image12] 
+
+Original image
+
+![alt text][image13]
 
 #### Future improvements
 Currently, we don't do extensive runs to optimize hyperparameters. There are a couple of popular hyperparameter optimization strategies, such as 
