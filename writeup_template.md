@@ -268,7 +268,6 @@ The code for making predictions on my final model is located in the cell[24, 43]
 For the first image, the model is really confident (more than 99.8 percent sure) that this is a 30Km/h speed limit sign
 
 
-
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .998       			| 30Km/h Speed Limit | 
