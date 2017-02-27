@@ -152,8 +152,10 @@ Dropout layer is adopted to avoid potential overfitting
 Keep probability is 0.5
 
 With predefined: Hyperparameters
-EPOCH = 10
+EPOCH = 30
 BATCH_SIZE = 128
+
+(Other learning rate and epochs combinations are also explored)
 
 Model training and evaluation is contained in the code cell[25, 26, 27] of the IPython notebook.  
 
@@ -174,16 +176,20 @@ The code for calculating the accuracy of the model is located in the ninth cell 
 Calculation test and validation accuracy of the mode is located in the cell[28] of the Ipython notebook
 
 My final model results were:
-* training set accuracy of 87.%
-* validation set accuracy of 91.6%
-* test set accuracy of 90.6%
+* training set accuracy of 86.7%
+* validation set accuracy of 94.1%
+* test set accuracy of 93.6%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
 LeNet 5 without dropout was chosen as intial architecture
 
 * What were some problems with the initial architecture?
+
+Potential issue was overfitting. Before introducing drop out layer, validation accuracy was around 90.5 percent. Adding drop out layer slightly improve validation accuracy close to 94 percent
+
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
 * Which parameters were tuned? How were they adjusted and why?
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
