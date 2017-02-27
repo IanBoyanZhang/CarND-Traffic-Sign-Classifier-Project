@@ -23,7 +23,11 @@ The goals / steps of this project are the following:
 [image2]: ./images/label_count.png "Label Count"
 [image3]: ./images/sorted_label_count.png "Sorted Label Count"
 [image4]: ./images/sample_rotation.png "Sample Rotation"
-[image10]: ./images/comparison.png "Predication Comparison"
+[image5]: ./images/c1.png "Predication Comparison1"
+[image6]: ./images/c2.png "Predication Comparison2"
+[image7]: ./images/c3.png "Predication Comparison3"
+[image8]: ./images/c4.png "Predication Comparison4"
+[image9]: ./images/c5.png "Predication Comparison5"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -203,15 +207,21 @@ Here are five German traffic signs that I found on the web:
 [Stop_sign](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/stop.jpg)
 [Yield](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/yield.jpg)
 
+
+####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+
+![alt text][image5]
+![alt text][image6]
+![alt text][image7]
+![alt text][image8]
+![alt text][image9]
+
+The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
+
 Model network constantly mistake 30km speed limit sign to 50km speed limit sign. As we can see the speed sign limits all have round shape
 Keep 
 
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
-
-![alt text][image10]
-
-The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
 
 Here are the results of the prediction:
 
