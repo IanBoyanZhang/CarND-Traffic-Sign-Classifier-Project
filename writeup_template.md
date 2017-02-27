@@ -180,6 +180,7 @@ My final model results were:
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
 LeNet 5 without dropout was chosen as intial architecture
+
 * What were some problems with the initial architecture?
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 * Which parameters were tuned? How were they adjusted and why?
@@ -188,8 +189,10 @@ LeNet 5 without dropout was chosen as intial architecture
 
 If a well known architecture was chosen:
 * What architecture was chosen?
+
 LeNet 5
 * Why did you believe it would be relevant to the traffic sign application?
+
 LeNet 5 performs well in text, hand recognization.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
 In the original paper [Sermanet et al.](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf), reported training and test accuracy is around 97 to 98 percent, here, trained model accuracy is around 90 percent. 
@@ -230,16 +233,15 @@ Model network constantly mistake 30km speed limit sign to 50km speed limit sign.
 Keep 
 
 
-
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| 50Km Speed limit     		| 30Km speed limit   									| 
+| Curve     			| General Caution 										|
+| Keep Right					| Keep Right										|
+| Stop      		| Stop					 				|
+| Yield			| Priority Road      							|
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
