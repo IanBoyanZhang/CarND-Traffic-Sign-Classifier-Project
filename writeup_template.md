@@ -198,7 +198,7 @@ Not ideal, as good as described in paper
 Here are five German traffic signs that I found on the web:
 
 [curve](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/curve.jpg)
-[50 Km limit](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/curve.jpg)
+[50 Km limit](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/50.jpg)
 [Keep Right](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/keep_right.jpg)
 [Stop_sign](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/stop.jpg)
 [Yield](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/yield.jpg)
