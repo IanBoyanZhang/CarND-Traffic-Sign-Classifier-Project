@@ -23,11 +23,6 @@ The goals / steps of this project are the following:
 [image2]: ./images/label_count.png "Label Count"
 [image3]: ./images/sorted_label_count.png "Sorted Label Count"
 [image4]: ./images/sample_rotation.png "Sample Rotation"
-[image5]: ./pack/50.jpg 50x50"50 Km"
-[image6]:  ./pack/curve.jpg "Left curve"
-[image7]: ./pack/keep_right.jpg "Keep right"
-[image8]:  ./pack/stop.jpg "Stop sign"
-[image9]: ./pack/yield.jpg "Yield"
 [image10]: ./images/comparison.png "Predication Comparison"
 
 ## Rubric Points
@@ -202,9 +197,11 @@ Not ideal, as good as described in paper
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
-![alt text][image9]
+![curve](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/curve.jpg =50x50)
+![50 Km limit](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/curve.jpg =50x50)
+![Keep Right](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/keep_right.jpg =50x50)
+![Stop_sign](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/stop.jpg =50x50)
+![Yield](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/yield.jpg =50x50)
 
 Model network constantly mistake 30km speed limit sign to 50km speed limit sign. As we can see the speed sign limits all have round shape
 Keep 
