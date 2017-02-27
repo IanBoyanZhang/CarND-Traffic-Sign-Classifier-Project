@@ -202,18 +202,26 @@ Not ideal, as good as described in paper
 Here are five German traffic signs that I found on the web:
 
 [curve](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/curve.jpg)
+
 [50 Km limit](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/50.jpg)
+
 [Keep Right](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/keep_right.jpg)
+
 [Stop_sign](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/stop.jpg)
+
 [Yield](https://github.com/IanBoyanZhang/CarND-Traffic-Sign-Classifier-Project/blob/master/pack/yield.jpg)
 
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 ![alt text][image5]
+
 ![alt text][image6]
+
 ![alt text][image7]
+
 ![alt text][image8]
+
 ![alt text][image9]
 
 The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
