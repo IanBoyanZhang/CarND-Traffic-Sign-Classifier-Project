@@ -28,7 +28,8 @@ The goals / steps of this project are the following:
 [image7]: ./images/c3.png "Predication Comparison3"
 [image8]: ./images/c4.png "Predication Comparison4"
 [image9]: ./images/c5.png "Predication Comparison5"
-[image10]: ./images/feature.png "Feature map"
+[image10]: ./images/featuremap.png "Feature map"
+[image11]: ./images/featuremap4x4.png "Feature map"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -152,7 +153,7 @@ Dropout layer is adopted to avoid potential overfitting
 Keep probability is 0.5
 
 With predefined: Hyperparameters
-EPOCH = 10
+EPOCH = 50
 BATCH_SIZE = 128
 
 Model training and evaluation is contained in the code cell[25, 26, 27] of the IPython notebook.  
@@ -160,7 +161,7 @@ Model training and evaluation is contained in the code cell[25, 26, 27] of the I
 One hot encoding was used for classifier.
 
 ###### Optimizer
-AdamOptimizer with start learning rate 0.001
+AdamOptimizer with start learning rate 0.0005
 
 ###### Cost function
 Cross Entropy loss with softmax (probablity activation layer)
@@ -174,9 +175,9 @@ The code for calculating the accuracy of the model is located in the ninth cell 
 Calculation test and validation accuracy of the mode is located in the cell[28] of the Ipython notebook
 
 My final model results were:
-* training set accuracy of 87.%
-* validation set accuracy of 91.6%
-* test set accuracy of 90.6%
+* training set accuracy of 87.0%
+* validation set accuracy of 94.2%
+* test set accuracy of 94.6%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -319,11 +320,12 @@ The model is really confident (more than 99.9 percent sure) that this is priorit
 |2.29349e-05 | Speed limit (60km/h)|
 | 1.49192e-05 | No passing for vehicles over 3.5 metric tons|
 
-Outputing final feature map for each channel
+Outputing feature map for "conv1" showing first hidden layer output after 2d convolution
+
+Input layer with 5x5 filter size
 
 ![alt text][image10]
 
-Trying to figure out how to output feature map for hidden layers
 #### Future improvements
 Currently, we don't do extensive runs to optimize hyperparameters. There are a couple of popular hyperparameter optimization strategies, such as 
 grid search, bayesian optimization, random search and gradient based optimization. Hopefully, in the near future, I would have enough bandwidth to explore these techniques in this or other ML problems.
